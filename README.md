@@ -18,3 +18,13 @@ After we iterate for each list and add characters in our string the code is fini
 This code is not very effective, because our password even though our user will choose his password to have a lot of characters it will still be a easy password to break through. Because we ask first for the letters and adding them in our string, after that we are asking for the numbers and same on, our password has an easy pattern (first will be the letters, then will be the numbers and after that will be symbols) so for this reason is easy to break through. We need to shuffle with the characters in our password to be stronger!
 
 
+# Password Generator (More Complex)
+First we change the empty string into a list because we know that in a list has a colection of sets that are mutable, that means that we can shuffle our characters in it.
+So for this we need a vid list ``password_list = []``
+
+## Logical Part
+We change the structure of the ``for`` loop now we need to use the ``.append()`` attribute so that we can add characters in our list. After we repeat the same thing for the last two loops we are gooing to use the ``random.shuffle()`` method so our password is not having the same pattern. 
+
+Now if we ``print(password_list)`` we are going to see that our password is in a list with random set of characters in it. It's good that our shaffle method work, but now we need to convert the list into a string.
+
+For that we are going to crate again the same empty string ``password = ""`` and make a ``for`` loop where our characters can be added from list in a string.

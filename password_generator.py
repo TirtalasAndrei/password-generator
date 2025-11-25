@@ -11,15 +11,22 @@ nr_symbols = int(input("Enter how many symbols you want to have on your password
 
 # Easy way
 
-password = ""
+password_list = []
 
 for char in range(0, nr_letters):
-    password += random.choice(list_letters)
+    password_list.append(random.choice(list_letters))
 
 for char in range(0, nr_numbers):
-    password += random.choice(list_numbers)
+    password_list.append(random.choice(list_numbers))
 
 for char in range(0, nr_symbols):
-    password += random.choice(list_symbols)
+    password_list.append(random.choice(list_symbols))
+
+random.shuffle(password_list)
+
+
+password = ""
+for char in password_list:
+    password += char
 
 print(f"Your new password is: {password}")
