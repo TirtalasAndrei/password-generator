@@ -28,3 +28,17 @@ We change the structure of the ``for`` loop now we need to use the ``.append()``
 Now if we ``print(password_list)`` we are going to see that our password is in a list with random set of characters in it. It's good that our shaffle method work, but now we need to convert the list into a string.
 
 For that we are going to crate again the same empty string ``password = ""`` and make a ``for`` loop where our characters can be added from list in a string.
+
+# Password Generator (Automate Password)
+For this part you need to ask the user to make a choice if he wants to type himself how many characters wants in his password or to generate automatic. For that will create the ``choice`` variable that will store the data that the user introduce from the keyboard.
+
+After that will put our first code in an if where will check first of all if the choice is valid or not and then what his wants. 
+
+```
+if choice == 1:
+# code from the Password Generater
+```
+
+Now we want to work on the second choice which is 2 where we are going to say that every random password crated will have a length of 16 characters. For us to get a random password from every list the easy way is to concatenate all the list into a single list. Form there we can easily take the characters with ``random.choice()`` method.
+
+And for the final part we are going to assume that the user will not enter what will ask for so will same in this case that the input is invalid.
